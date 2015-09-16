@@ -1,0 +1,1 @@
+function string buscar(string cadena)	private		int pf;		string cadena2,cadf;	end	begin		pf=fopen("config.yaw",O_READ);		if(pf)			while(!feof(pf))				cadena2=fgets(pf);				if(find(cadena2,cadena)>-1)					cadf=fgets(pf);					break;				end			end			fclose(pf);			return cadf;		end	end 
